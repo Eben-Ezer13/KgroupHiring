@@ -11,7 +11,7 @@ export const applicationSchema = z.object({
   whatsapp: z.string().transform((v, ctx) => { try { return normalizeMoroccanPhone(v); } catch { ctx.addIssue({ code: "custom", message: "Entrez un numéro marocain valide (06, 07, +2126 ou +2127)." }); return z.NEVER; } }),
   city: z.enum(cities, { errorMap: () => ({ message: "Choisissez une ville dans la liste." }) }),
   email: z.string().trim().email("Entrez une adresse e-mail valide.").max(254),
-  motivation: z.string().trim().min(50, "Votre motivation doit contenir au moins 50 caractères.").max(800, "Votre motivation ne peut pas dépasser 800 caractères."),
+  motivation: z.string().trim().max(800, "Votre motivation ne peut pas dépasser 800 caractères.").optional(),
   consent: z.boolean().refine((v) => v, "Votre accord est nécessaire pour traiter votre candidature."),
   website: z.string().max(0, "Envoi invalide.").optional(),
 });
