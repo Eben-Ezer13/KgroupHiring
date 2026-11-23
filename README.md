@@ -23,7 +23,7 @@ La page publique est sur `http://localhost:3000` et l'espace équipe sur `/admin
 
 - Liens sociaux : modifiez uniquement [`src/config/social.ts`](src/config/social.ts). Tant que le lien est `REMPLACER_PAR_…`, la carte et son lien du pied de page sont masqués.
 - Textes et villes : `src/config/content.ts`.
-- Logo et images : remplacez `public/images/logo.jpeg` et `public/images/hiring.png`. L'image du logo sert aussi de favicon. L'affiche fournie est utilisée comme visuel du hero.
+- Logo et images : remplacez `public/images/logo.jpeg` et `public/images/reception.webp`. L'image du logo sert aussi de favicon. L'image de l'accueil KGroup est le visuel du hero.
 - Mot de passe d'administration et secret de session : variables d'environnement uniquement.
 
 ## Administration
