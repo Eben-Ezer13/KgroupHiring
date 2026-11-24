@@ -1,0 +1,15 @@
+{
+  "name": "KGroup Parfumery — La senteur du luxe",
+  "short_name": "KGroup",
+  "description": "Découvrez les opportunités de carrière chez KGroup Parfumery.",
+  "lang": "fr-MA",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F7F3EA",
+  "theme_color": "#0F2E1C",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
